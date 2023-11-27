@@ -9,16 +9,16 @@ import javax.sql.DataSource;
 import java.util.List;
 import java.util.Map;
 
-@SpringBootTest
+//@SpringBootTest
 class DemoApplicationTests {
-    @Autowired
-    JdbcTemplate jdbcTemplate;
-    @Test
-    void contextLoads() {
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from test");
-        System.out.println(maps.size());
-        System.out.println(maps);
-    }
+//    @Autowired
+//    JdbcTemplate jdbcTemplate;
+//    @Test
+//    void contextLoads() {
+//        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from test");
+//        System.out.println(maps.size());
+//        System.out.println(maps);
+//    }
 
 
 

@@ -13,17 +13,17 @@ public class CommonTest {
     private static final String TRAIN_FILE_NAME = "";
     private static final String MODEL_FILE_NAME = "F:\\IdeaProjects\\test\\hanlp-wiki-vec-zh\\hanlp-wiki-vec-zh.txt";
 
-    public static void main(String[] args) throws IOException {
-        String a = "该群众是昭苏县金华园小区2-1-402室居民，反映暖气不热，故群众来电投诉，希望相关部门核实处理。";
-        String b = "群众来电反映昭苏县东城区崔龙湾小区23-1-501室暖气不热，故来电求助。究刑事责任。";
-
-        WordVectorModel wordVectorModel = trainOrLoadModel();
-        // 文档向量
-        DocVectorModel docVectorModel = new DocVectorModel(wordVectorModel);
-
-        System.out.println(docVectorModel.similarity(a, b));
-
-    }
+//    public static void main(String[] args) throws IOException {
+//        String a = "关于拖欠工资相关问题";
+//        String b = "关于拖欠工资的问题";
+//
+//        WordVectorModel wordVectorModel = trainOrLoadModel();
+//        // 文档向量
+//        DocVectorModel docVectorModel = new DocVectorModel(wordVectorModel);
+//
+//        System.out.println(docVectorModel.similarity(a, b));
+//
+//    }
 
     static void printNearest(String word, WordVectorModel model) {
         System.out.printf("\n                                                Word     Cosine\n------------------------------------------------------------------------\n");
